@@ -1,0 +1,26 @@
+package servico;
+
+import java.util.List;
+
+import dao.UsuarioDao;
+import modelo.Usuario;
+
+public class UsuarioServico {
+	UsuarioDao dao = new UsuarioDao();
+
+	public boolean verificarUsuario(Usuario usuario) {
+		
+		
+		Usuario u = dao.validarLogin(usuario);
+		
+		if(u.getNome() != null) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+public List<Usuario> listarUsuario(){
+	List<Usuario> lista = dao.listar();
+	return lista;
+}
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
+<meta charset="ISO-8859-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login</title>
@@ -13,9 +13,6 @@
 
 	<nav>
 		<div class="logo">@brayanmasc</div>
-		<input type="checkbox" id="click"> <label for="click"
-			class="menu-btn"> <i class="fas fa-bars"></i>
-		</label>
 		<ul style="position: fixed; right: 100px; top: 30px;">
 			<li><a class="active" href="home.jsp">Home</a></li>
 
@@ -54,7 +51,7 @@
 				</form>
 
 				<div class="login-signup">
-					<span class="text">Não é membro? <a href="#"
+					<span class="text">Ainda não tem conta? <a href="#"
 						class="text signup-link">Faça seu cadastro</a>
 					</span>
 				</div>
@@ -87,7 +84,7 @@
 					<div class="checkbox-text">
 						<div class="checkbox-content">
 							<input type="checkbox" id="termCon"> <label for="termCon"
-								class="text">Eu aceito todos os termos.</label>
+								class="text">Eu li e concordo com os termos de uso</label>
 						</div>
 					</div>
 
@@ -97,8 +94,8 @@
 				</form>
 
 				<div class="login-signup">
-					<span class="text">Já é membro? <a href="#"
-						class="text login-link">Entre agora</a>
+					<span class="text">Já é membro?<a href="#"
+						class="text login-link"> Entre agora</a>
 					</span>
 				</div>
 			</div>
@@ -139,6 +136,6 @@
           container.classList.remove("active");
       });
   </script>
-  <footer> Copyright ©copy 2023 </footer>
+  <footer> Copyright © 2023 </footer>
 </body>
 </html>

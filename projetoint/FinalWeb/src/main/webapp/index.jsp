@@ -14,7 +14,7 @@
 	<nav>
 		<div class="logo">@brayanmasc</div>
 		<ul style="position: fixed; right: 100px; top: 30px;">
-			<li><a class="active" href="home.jsp">Home</a></li>
+			<li><a class="active" href="index.jsp">Home</a></li>
 
 		</ul>
 	</nav>
@@ -84,7 +84,7 @@
 					<div class="checkbox-text">
 						<div class="checkbox-content">
 							<input type="checkbox" id="termCon"> <label for="termCon"
-								class="text">Eu li e concordo com os termos de uso</label>
+								class="text">Eu li e concordo com os termos de uso.</label>
 						</div>
 					</div>
 
@@ -94,8 +94,8 @@
 				</form>
 
 				<div class="login-signup">
-					<span class="text">Já é membro?<a href="#"
-						class="text login-link"> Entre agora</a>
+					<span class="text">Já é membro? <a href="#"
+						class="text login-link">Entre agora</a>
 					</span>
 				</div>
 			</div>
@@ -136,6 +136,6 @@
           container.classList.remove("active");
       });
   </script>
-  <footer> Copyright © 2023 </footer>
+	<footer> Copyright © 2023 </footer>
 </body>
 </html>

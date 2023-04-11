@@ -21,26 +21,27 @@
 		</ul>
 	</nav>
 	<div class="conteudo">
-		<% 
-			List<Usuario> lista = (List<Usuario>)session.getAttribute("lista");
+		<%
+		List<Usuario> lista = (List<Usuario>)session.getAttribute("lista");
 		%>
 		
-		<table>
-			<tr>
-				<td>USUÁRIO</td>
-				<td>NOME</td>
-				<td>EMAIL</td>
-				
-		<%
-		for(Usuario usuario: lista){
-			out.write("<tr>");
-			out.write("<td>" + usuario.getUsuario() + "</td>");
-			out.write("<td>" + usuario.getNome() + "</td>");
-			out.write("<td>" + usuario.getEmail() + "</td>");
-			out.write("</tr>");
-		}
-		%>
-		</table>
+<table border=1>
+					<tr>
+						<td style="color:white">USUÁRIO</td>
+						<td style="color:white">NOME</td>
+						<td style="color:white">EMAIL</td>
+					</tr>
+					
+					<%
+						for(Usuario usuario: lista){
+							out.write("<tr>");
+							out.write("<td>" + usuario.getUsuario() + "</td>");
+							out.write("<td>" + usuario.getNome() + "</td>");
+							out.write("<td>" + usuario.getEmail() + "</td>");
+							out.write("</tr>");
+						}
+					%>
+				</table>
 	</div>
 	<footer> Copyright © 2023 </footer>
 </body>

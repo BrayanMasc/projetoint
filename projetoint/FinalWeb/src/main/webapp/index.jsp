@@ -26,8 +26,8 @@
 
 				<form action="LoginServlet" method="post">
 					<div class="input-field">
-						<input type="text" placeholder="Email" class="password" id="email"
-							name="email" required> <i class="uil uil-envelope icon"></i>
+						<input type="text" placeholder="Usuario" class="password" id="email"
+							name="email" required> <i class="uil uil-user-circle icon"></i>
 					</div>
 					<div class="input-field">
 						<input type="password" class="password" placeholder="Senha"
@@ -57,27 +57,26 @@
 				</div>
 			</div>
 
-			<!-- Registration Form -->
+			<!-- Registrar -->
 			<div class="form signup">
 				<span class="title">Registrar</span>
 
-				<form action="#">
+				<form action="IncluirUsuarioServlet" method="post">
 					<div class="input-field">
-						<input type="text" class="password" placeholder="Nome completo"
-							required> <i class="uil uil-user"></i>
+						<input type="text" class="password" placeholder="Usuario" name="txtUsuario" required>
+						<i class="uil uil-user-circle"></i>
 					</div>
 					<div class="input-field">
-						<input type="text" class="password" placeholder="Email valido"
-							required> <i class="uil uil-envelope icon"></i>
+						<input type="text" class="password" placeholder="Nome" name="txtNome" required>
+						<i class="uil uil-user-square"></i>
+					</div>
+					<div class="input-field">
+						<input type="text" class="password" placeholder="Email" name="txtEmail" required>
+						<i class="uil uil-envelope icon"></i>
 					</div>
 					<div class="input-field">
 						<input type="password" class="password" placeholder="Senha"
-							required> <i class="uil uil-lock icon"></i>
-					</div>
-					<div class="input-field">
-						<input type="password" class="password"
-							placeholder="Confirmar senha" required> <i
-							class="uil uil-lock icon"></i> <i
+							 name="txtSenha" required> <i class="uil uil-lock icon"></i> <i
 							class="uil uil-eye-slash showHidePw"></i>
 					</div>
 
@@ -89,7 +88,7 @@
 					</div>
 
 					<div class="input-field button">
-						<input type="button" value="Registrar-se">
+						<input type="submit" value="Registrar-se">
 					</div>
 				</form>
 
@@ -107,7 +106,6 @@
         signUp = document.querySelector(".signup-link"),
         login = document.querySelector(".login-link");
   
-      //   js code to show/hide password and change icon
       pwShowHide.forEach(eyeIcon =>{
           eyeIcon.addEventListener("click", ()=>{
               pwFields.forEach(pwField =>{

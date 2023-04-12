@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<%@page import="java.util.List" %>
-<%@page import="modelo.Usuario" %>
+<%@page import="java.util.List"%>
+<%@page import="modelo.Usuario"%>
 <html lang="pt-br">
 <head>
 <meta charset="ISO-8859-1">
@@ -22,26 +22,26 @@
 	</nav>
 	<div class="conteudo">
 		<%
-		List<Usuario> lista = (List<Usuario>)session.getAttribute("lista");
+		List<Usuario> lista = (List<Usuario>) session.getAttribute("lista");
 		%>
-		
-<table border=1>
-					<tr>
-						<td style="color:white">USUÁRIO</td>
-						<td style="color:white">NOME</td>
-						<td style="color:white">EMAIL</td>
-					</tr>
-					
-					<%
-						for(Usuario usuario: lista){
-							out.write("<tr>");
-							out.write("<td>" + usuario.getUsuario() + "</td>");
-							out.write("<td>" + usuario.getNome() + "</td>");
-							out.write("<td>" + usuario.getEmail() + "</td>");
-							out.write("</tr>");
-						}
-					%>
-				</table>
+
+		<table border=1>
+			<tr>
+				<td style="color: white">USUÁRIO</td>
+				<td style="color: white">NOME</td>
+				<td style="color: white">EMAIL</td>
+			</tr>
+
+			<%
+			for (Usuario usuario : lista) {
+				out.write("<tr>");
+				out.write("<td>" + usuario.getUsuario() + "</td>");
+				out.write("<td>" + usuario.getNome() + "</td>");
+				out.write("<td>" + usuario.getEmail() + "</td>");
+				out.write("</tr>");
+			}
+			%>
+		</table>
 	</div>
 	<footer> Copyright © 2023 </footer>
 </body>
